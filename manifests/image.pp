@@ -100,7 +100,7 @@ define docker::image(
     }
   } elsif $ensure == 'present' {
     exec { $image_install:
-      unless      => $image_find,
+      #unless      => $image_find,
       environment => 'HOME=/root',
       path        => ['/bin', '/usr/bin'],
       timeout     => 0,
