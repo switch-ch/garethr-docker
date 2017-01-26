@@ -106,6 +106,7 @@ define docker::image(
       timeout     => 0,
       returns     => ['0', '1'],
       require     => File['/usr/local/bin/update_docker_image.sh'],
+      logoutput   => true,
     }
   }
 
