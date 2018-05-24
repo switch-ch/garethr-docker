@@ -55,7 +55,7 @@ class docker::params {
   $dm_override_udev_sync_check       = undef
   $manage_package                    = true
   $package_source                    = undef
-  $manage_kernel                     = true
+  $manage_kernel                     = false
   $package_name_default              = 'docker-engine'
   $service_name_default              = 'docker'
   $docker_command_default            = 'docker'
